@@ -1,0 +1,104 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.landing-section {
+  background-image: url("../assets/german_alps_fade.jpg");
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 100vh;
+  h1 {
+    font-weight: 700;
+    color: white;
+    font-size: 10rem;
+    padding-left: 5%
+  }
+}
+
+.boxer-section {
+  width: auto;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  h1 {
+    font-size: 4rem;
+  }
+  .boxerinfo {
+    grid-column: 1;
+    padding: 5%;
+    opacity: 0;
+    transition: 1s;
+    transform: translate(0px, 50px);
+  }
+  .boxerinfo.boxer-fade {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  .boxer-img {
+    max-width: 25rem;
+    height: auto;
+    position: center;
+    opacity: 0;
+    transition: 2s;
+    grid-column: 2;
+    padding-top: 15%;
+    transform: translate(0px, 100px);
+  }
+  .boxer-img.fade-in {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+.ninet-classic{
+  height: 80vh;
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+
+  h1 {
+    margin-top: 0;
+  }
+  
+  .classic-info {
+    grid-column-start: 1;
+    grid-row: 1;
+    grid-column-end: 3;
+    height: 100%;
+  }
+  .classic-background {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row: 1;
+    background-image: url("../assets/classic.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+
+.classic-heading {
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  font-size: 4rem;
+  z-index: 1;
+  padding-left: 5%;
+  transition: 2s;
+  opacity: 0;
+  transition: 1s;
+  transform: translate(600px, 0px);
+}
+
+.classic-heading.classic-fade {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+
+
+.ninet-scrambler {
+  height: 40vh;
+  border: solid red;
+}
