@@ -1,0 +1,35 @@
+.grid-col--2 {
+    display: block;
+  }
+
+//-----------------------------------------------//
+  .landing-section {
+    h1 {
+      color: white;
+      font-size: 10rem;
+      padding-left: 5%;
+      margin-top: 0;
+    }
+  }
+//-----------------------------------------------//
+.boxer-section {
+    width: auto;
+    height: 110vh;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    h1 {
+      font-size: 4rem;
+    }
+    .boxerinfo {
+      grid-column: 1;
+    }
+    .boxer-img {
+      max-width: 25rem;
+      height: auto;
+      position: center;
+      grid-column: 2;
+      grid-row: 1;
+      margin: auto 0;
+    }
+}
+//-----------------------------------------------//

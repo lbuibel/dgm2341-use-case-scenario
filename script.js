@@ -1,14 +1,8 @@
-// var grid = document.querySelector('.grid');
-// var msnry = new Masonry( grid, {
-//   // options...
-//   itemSelector: '.grid-item',
-//   columnWidth: 200
-// });
-
-// // init with selector
-// var msnry = new Masonry( '.grid', {
-//   // options...
-// });
+// selector string as first argument
+var colc = new Colcade( '.grid', {
+  columns: '.grid-col',
+  items: '.grid-item'
+});
 
 /////////////////////////////////////////////
 

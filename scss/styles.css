@@ -343,6 +343,7 @@ template {
 
 body {
   font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
 }
 
 h1 h2 h3 {
@@ -363,18 +364,21 @@ p {
 
 .landing-section h1 {
   color: white;
-  font-size: 10rem;
+  font-size: 8rem;
   padding-left: 5%;
   margin-top: 0;
+  padding-top: 20vh;
 }
 
 .boxer-section {
   width: auto;
-  height: 80vh;
+  height: 135vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr, 1fr;
-      grid-template-columns: 1fr, 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto, 1fr, 1fr;
+      grid-template-rows: auto, 1fr, 1fr;
 }
 
 .boxer-section h1 {
@@ -382,9 +386,10 @@ p {
 }
 
 .boxer-section .boxerinfo {
-  -ms-grid-column: 1;
-  grid-column: 1;
-  padding: 5%;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  padding-left: 5%;
+  padding-right: 5%;
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;
@@ -399,17 +404,19 @@ p {
 }
 
 .boxer-section .boxer-img {
-  max-width: 25rem;
   height: auto;
   position: center;
   opacity: 0;
   -webkit-transition: 2s;
   transition: 2s;
-  -ms-grid-column: 2;
-  grid-column: 2;
-  padding-top: 15%;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
   -webkit-transform: translate(0px, 100px);
           transform: translate(0px, 100px);
+  margin: 0 auto;
+  width: 80%;
 }
 
 .boxer-section .boxer-img.fade-in {
@@ -518,6 +525,88 @@ p {
           transform: translate(0px, 0px);
 }
 
+.masonry-container {
+  width: 96%;
+  margin: 0 auto;
+  border: solid red;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid .grid-col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 .1em;
+}
+
+.grid img {
+  width: 100%;
+}
+
+.grid-col--2, .grid-col--3 {
+  display: none;
+}
+
+.content {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  margin-top: 1em;
+}
+
+.content h3 {
+  margin: .2em .5em;
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 40rem) {
+  .grid-col--2 {
+    display: block;
+  }
+  .landing-section h1 {
+    color: white;
+    font-size: 10rem;
+    padding-left: 5%;
+    margin-top: 0;
+  }
+  .boxer-section {
+    width: auto;
+    height: 110vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr, 1fr;
+        grid-template-columns: 1fr, 1fr;
+  }
+  .boxer-section h1 {
+    font-size: 4rem;
+  }
+  .boxer-section .boxerinfo {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .boxer-section .boxer-img {
+    max-width: 25rem;
+    height: auto;
+    position: center;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin: auto 0;
+  }
+}
+
 /* end of media query */
+@media only screen and (min-width: 60rem) {
+  .grid-col--3 {
+    display: block;
+  }
+}
+
 /* end of media query */
 /*# sourceMappingURL=styles.css.map */
