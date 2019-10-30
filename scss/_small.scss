@@ -1,6 +1,12 @@
 body {
   font-family: 'Lato', sans-serif;
 }
+h1 h2 h3 {
+  font-weight: 700;
+}
+p {
+  font-weight: 300;
+}
 
 .landing-section {
   background-image: url("../assets/german_alps_fade.jpg");
@@ -9,10 +15,10 @@ body {
   width: auto;
   height: 100vh;
   h1 {
-    font-weight: 700;
     color: white;
     font-size: 10rem;
-    padding-left: 5%
+    padding-left: 5%;
+    margin-top: 0;
   }
 }
 
@@ -99,6 +105,38 @@ body {
 
 
 .ninet-scrambler {
-  height: 40vh;
-  border: solid red;
+  max-width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5%;
+}
+
+.section4-heading {
+  opacity: 0;
+  transform: translate(0px, 50px);
+  transition: 1s;
+}
+
+.section4-heading.section4-heading-fade {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+
+#section-5 {
+  height: 90vh;
+  border: solid black;
+}
+
+.section4-text {
+  opacity: 0;
+  transform: translate(0px, 50px);
+  transition: 2s;
+}
+
+.section4-text.section4-text-fade {
+  opacity: 1 !important;
+  transform: translate(0px, 0px);
 }
