@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: 1fr, 1fr;
     h1 {
-      font-size: 4rem;
+      margin-bottom: 0;
     }
     .boxerinfo {
       grid-column: 1;
@@ -33,3 +33,4 @@
     }
 }
 //-----------------------------------------------//
+

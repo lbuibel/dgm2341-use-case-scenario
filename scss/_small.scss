@@ -8,6 +8,12 @@ h1 h2 h3 {
 p {
   font-weight: 300;
 }
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
 
 .landing-section {
   background-image: url("../assets/german_alps_fade.jpg");
@@ -17,22 +23,24 @@ p {
   height: 100vh;
   h1 {
     color: white;
-    font-size: 8rem;
     padding-left: 5%;
     margin-top: 0;
-    padding-top: 20vh;
+    padding-top: 15vh;
+    line-height: 8rem;
+    margin-bottom: 2rem;
+  }
+  p {
+    padding-left: 5%;
+    color: white;
   }
 }
 
 .boxer-section {
   width: auto;
-  height: 135vh;
+  height: 125vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto, 1fr, 1fr;
-  h1 {
-    font-size: 4rem;
-  }
   .boxerinfo {
     grid-row: 1;
     padding-left: 5%;
@@ -40,6 +48,9 @@ p {
     opacity: 0;
     transition: 1s;
     transform: translate(0px, 50px);
+  }
+  h1 {
+    font-size: 3rem;
   }
   .boxerinfo.boxer-fade {
     opacity: 1;
@@ -54,7 +65,7 @@ p {
     grid-row: 2;
     transform: translate(0px, 100px);
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
   }
   .boxer-img.fade-in {
     opacity: 1;
@@ -150,7 +161,6 @@ p {
 .masonry-container {
   width: 96%;
   margin: 0 auto;
-  border: solid red;
 }
 
 .grid {
@@ -176,9 +186,18 @@ p {
   background: rgba(0,0,0,.6);
   color: white;
   margin-top: 1em;
+  transition: .5s ease;
+  opacity: 0;
 
   h3 {
     margin: .2em .5em;
     font-size: 1em;
+  }
+}
+
+.grid-item:hover {
+  .content {
+    opacity: 1;
+    width: 7rem;
   }
 }
