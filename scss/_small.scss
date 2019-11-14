@@ -161,6 +161,7 @@ h2 {
 .masonry-container {
   width: 96%;
   margin: 0 auto;
+  border: solide red;
 }
 
 .grid {
@@ -200,4 +201,11 @@ h2 {
     opacity: 1;
     width: 7rem;
   }
+}
+//------------- Video ----------------//
+.videoSection {
+  padding-top: 10vh;
+  width: 74rem;
+  margin: 0 auto;
+  padding-bottom: 5vh;
 }
