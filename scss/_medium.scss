@@ -26,3 +26,12 @@
       font-size: 9rem;
     }
   }
+
+  .item-2 {
+    /* Second Item will have a marginTop equal to first section height */
+    margin-top: 100vh;
+  }
+  
+  .item {
+    height: 100vh;
+  }
