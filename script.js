@@ -25,7 +25,7 @@ var checkPointForth = checkPointThree + parseFloat(SectionForthHeight);
 function onScroll() {
   //get the current scrollbar position
   var scrollBarPosition = window.pageYOffset | document.body.scrollTop
-  console.log(scrollBarPosition + ' : ' + checkPointOne)
+  // console.log(scrollBarPosition + ' : ' + checkPointOne)
     //First section is already fixed
   if (scrollBarPosition >= 0 && scrollBarPosition < checkPointOne) {
     removeClass(sectionTwo, sectionThree)
@@ -73,7 +73,6 @@ var scene2 = new ScrollMagic.Scene({
 })
     .setClassToggle('.story-text', 'story-text-fade')
     .addTo(controller)
-    classic-heading
 
 
 
@@ -82,5 +81,4 @@ var scene2 = new ScrollMagic.Scene({
     })
         .setClassToggle('.boxer-img', 'boxer-img-fade')
         .addTo(controller)
-        classic-heading
     

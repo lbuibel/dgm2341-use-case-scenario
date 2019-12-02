@@ -23,15 +23,21 @@
 
   .item-1 {
     h1 {
-      font-size: 9rem;
+      font-size: 6rem;
     }
   }
 
   .item-2 {
     /* Second Item will have a marginTop equal to first section height */
-    margin-top: 100vh;
+    margin-top: 90vh;
   }
   
   .item {
-    height: 100vh;
+    height: 90vh;
+  }
+
+  .item-4 {
+    h1 {
+      font-size: 5rem;
+    }
   }
