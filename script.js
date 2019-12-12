@@ -8,7 +8,7 @@ var sectionThree = document.querySelector('.item-3');
 var sectionForth = document.querySelector('.item-4');
 var sectionFivth = document.querySelector('.item-5');
 
-//Calculate their individual height
+//Calculate Hero Section Heights
 var SectionOneHeight = getComputedStyle(sectionOne).height.split('px')[0];
 var SectionTwoHeight = getComputedStyle(sectionTwo).height.split('px')[0];
 var SectionThreeHeight = getComputedStyle(sectionThree).height.split('px')[0];
@@ -25,8 +25,6 @@ var checkPointForth = checkPointThree + parseFloat(SectionForthHeight);
 function onScroll() {
   //get the current scrollbar position
   var scrollBarPosition = window.pageYOffset | document.body.scrollTop
-  // console.log(scrollBarPosition + ' : ' + checkPointOne)
-    //First section is already fixed
   if (scrollBarPosition >= 0 && scrollBarPosition < checkPointOne) {
     removeClass(sectionTwo, sectionThree)
   } else if (scrollBarPosition > checkPointOne && scrollBarPosition <= checkPointTwo) {

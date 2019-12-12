@@ -6,25 +6,6 @@
   margin-top: 0px !important;/**/
 }
 
-.item-1 {
-  /* First item will always remain fixed */
-  position: fixed;
-  top: 0;
-}
-
-.item-2 {
-  /* Second Item will have a marginTop equal to first section height */
-  margin-top: 750px;
-}
-
-
-/* ============== End ===================== */
-
-
-/* These all are just meant for styling the page */
-
-
-
 a {
   text-decoration: none;
 }
@@ -57,10 +38,19 @@ h2 {
   font-size: 2.5rem;
 }
 
+.item-1 {
+  position: fixed;
+  top: 0;
+}
+
+.item-2 {
+  margin-top: 720px;
+}
+
 .item {
   overflow-x: hidden;
   width: 100vw;
-  height: 750px;
+  height: 720px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
